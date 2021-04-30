@@ -53,7 +53,7 @@ if ( isset($header['X-Hub-Signature']) && $header['X-Hub-Signature'] === 'sha1='
 
             # pull実行
             // exec('git pull origin '.$branch.' 2>&1', $output, $return);
-            exec('ls', $output, $return);
+            exec('pwd', $output, $return);
 
             # ログ記録
             file_put_contents($LOG_FILE,
